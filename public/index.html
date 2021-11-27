@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>Hlavní stránka | Truhlice</title>
+        <link rel="stylesheet" href="style.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300&family=Poppins:wght@300&display=swap" rel="stylesheet">
+        <meta http-equiv="content-type" content="text/html; charset=ISO-8859-1">
+        <meta content="width=device-width; initial-scale=1.0; maximum-scale=1.0; user-scalable=0;" name="viewport">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css">
+        <script src="https://unpkg.com/react@17/umd/react.development.js" crossorigin></script>
+        <script src="https://unpkg.com/react-dom@17/umd/react-dom.development.js" crossorigin></script>
+        <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
+    </head>
+    <body width="device-width">
+        <div id="root">
+        <div class="header">
+            <div class="navbar">
+                <div class="logo">
+                    <img src="images/matince-ver.png" width="125px">
+                </div>
+                <nav>
+                    <ul id="MenuItems">
+                        <li><a href="/index.html">Úvod</a></li>
+                        <li><a href="/products.html">Produkty</a></li>
+                        <li><a href="/about-me.html">O mě</a></li>
+                        <li><a href="/contact.html">Kontakt</a></li>
+                    </ul>
+                </nav>
+                <img src="/images/cart.png" width="30px" height="30px" onclick="document.location.href='cart.html'" class="rocket">
+                <img src="/images/menu.png" class="menu-icon" onclick="menutoggle()">
+            </div>
+        <div class="container">
+            <div class="row">
+                <div class="col-2">
+                    <h1>Ručně šité produkty</h1>
+                    <p>Ručně šité tašky, utěrky, zástěry a spoustu dalších produktů<br>přímo z dílny až k Vám!</p>
+                    <a href="products.html" class="btn">Prohlédnout &#10140;</a>
+                </div>
+                <div class="col-2">
+                    <img srcset="
+                    /images/IMG_20211031_115634done.png 4000w,
+                    /images/IMG_20211031_115634done.png 2000w,
+                    /images/IMG_20211031_115634done.png 1080w,
+                    /images/IMG_20211031_115634done.png 700w,
+                    /images/IMG_20211031_115634done.png 400w,
+                    /images/IMG_20211031_115634done.png 300w,
+                    " sizes = "(min-width: 800px) 1440px, 100vw" src="/images/IMG_20211031_115634done">
+                </div>
+            </div>
+        </div>  
+    </div>
+    <!------ kategorie ------>
+        <div class="categories">
+            <div class="small-container">
+                <div class="row">
+                    <div class="col-3">
+                        <img src="/images/IMG_20211031_120823.jpg">
+                    </div>
+                    <div class="col-3">
+                        <img src="/images/IMG_20211031_121216.jpg">
+                    </div>
+                    <div class="col-3">
+                        <img src="/images/IMG_20211031_121504.jpg">
+                    </div>
+                </div>
+            </div>
+        </div>
+    <!------ oblíbené produkty ------>
+    <div class="small-container">
+        <h2 class="title">Oblíbené produkty</h2>
+        <div class="row">
+            <div class="col-4">
+                <img src="/images/IMG_20211031_115330.jpg">
+                <h4>Knihobal</h4>
+                <div class="rating">
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star-half-stroke"></i>
+                </div>
+                <p>180 Kč</p>
+            </div>
+            <div class="col-4">
+                <img src="/images/IMG_20211031_122139.jpg">
+                <h4>Knihobal</h4>
+                <div class="rating">
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star-half-stroke"></i>
+                </div>
+                <p>180 Kč</p>
+            </div>
+            <div class="col-4">
+                <img src="/images/IMG_20211031_122040.jpg">
+                <h4>Knihobal</h4>
+                <div class="rating">
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star-half-stroke"></i>
+                </div>
+                <p>180 Kč</p>
+            </div>
+        </div>
+    </div>
+<!---------nabídka--------->
+        <div class="offer">
+            <div class="small-container">
+                <div class="row">
+                    <div class="col-2">
+                        <img src="/images/IMG_20211031_120917.jpg" alt=""> <!--Taška-->
+                    </div>
+                    <div class="col-2">
+                        <p>Nejoblíbenější!</p>
+                        <h1>Plátěná šitá taška</h1>
+                        <small>V dnešní době se řeší ekologie, plasty atd.
+                            Co kdyby jste místo kupování plastových tašek ze supermarketu měli tašku, která se dá použít znovu a znovu? Pokud by se Vám tohle líbilo, 
+                            můžete zvolit tuto tašku!<br>
+                        </small>
+                        <a href="" class="btn">Koupit &#8594;</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+<!--------- testimonial --------->
+        <div class="testimonial">
+            <div class="small-container">
+                <div class="row">
+                    <div class="col-3">
+                        <i class="fa fa-quote-left"></i>
+                        <p>Mamáááá... svéééé... věř</p>
+                        <div class="rating">
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                        </div>
+                        <img src="/images/NvHRPgxe_400x400.png">
+                        <h3>Vojta Hojgr</h3>
+                    </div>
+                    <div class="col-3">
+                        <i class="fa fa-quote-left"></i>
+                        <p>Upřímně tě sleduju moc dlouho a tvé produkty se mi líbí.
+                             Pošlu ti chleba a dej Vojtíškovi prosím tě i těch 5000kč které jsem poslala s tím, děkuji 🥰</p>
+                        <div class="rating">
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                        </div>
+                        <img src="/images/NvHRPgxe_400x400.png">
+                        <h3>Chlebodar</h3>
+                    </div>
+                    <div class="col-3">
+                        <i class="fa fa-quote-left"></i>
+                        <p>Koupila jsem a balík je na cestě. Objednala jsem to až na ostrov Pipiland tam, kde se světla dotýkají země 🤩</p>
+                        <div class="rating">
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                        </div>
+                        <img src="/images/NvHRPgxe_400x400.png">
+                        <h3>Moje Pipi ❤️</h3>
+                    </div>
+                </div>
+            </div>
+        </div>
+<!------- footer ------->
+        <div class="footer">
+                <div class="row">
+                    <div class="footer-col-1">
+                    <h3>Užitečné odkazy</h3>
+                    <ul>
+                        <li class="space-fix">Zásady vrácení peněz</li>
+                    </ul>
+                </div>
+                <div class="footer-col-2">
+                    <h3>Sleduj mě na</h3>
+                    <ul>
+                        <li onclick="location.href='https://www.facebook.com/Truhlice'" class="facebook">Facebook</li>
+                        <li onclick="location.href='https://www.instagram.com/truhlice/'" class="instagram">Instagram</li>
+                        <li onclick="location.href='https://www.instagram.com/vojtahojgr/'" class="programmer">Instagram (programátor)</li>
+                    </ul>
+                </div>
+            </div>
+            <hr>
+            <p class="copyright">Copyright 2021 - Truhlice</p>
+        </div>
+<!----- js pro toggleMenu ----->
+        <script src="js/toggleMenu.js"></script>
+      </div>
+    </div>
+    </body>
+</html>

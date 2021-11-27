@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>O mě | Truhlice</title>
+        <link rel="stylesheet" href="style.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300&family=Poppins:wght@300&display=swap" rel="stylesheet">
+        <meta http-equiv="content-type" content="text/html; charset=ISO-8859-1">
+        <meta content="width=device-width; initial-scale=1.0; maximum-scale=1.0; user-scalable=0;" name="viewport">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css">
+    </head>
+    <body width="device-width">
+        <div class="navbar">
+            <div class="logo">
+                <img src="images/matince-ver.png" width="125px">
+            </div>
+            <nav>
+                <ul id="MenuItems">
+                    <li><a href="/index.html">Úvod</a></li>
+                    <li><a href="/products.html">Produkty</a></li>
+                    <li><a href="/about-me.html">O mě</a></li>
+                    <li><a href="/contact.html">Kontakt</a></li>
+                </ul>
+            </nav>
+            <img src="/images/cart.png" width="30px" height="30px" onclick="document.location.href='cart.html'" class="rocket">
+            <img src="/images/menu.png" class="menu-icon" onclick="menutoggle()">
+        </div>
+        <div class="container">
+        <div class="book">
+            <div class="col-2 new-world">
+                <div class="abme">
+                    <h1>Dana Hojgrová</h1>
+                    <img src="/images/146937632_4040373772660164_8203473369493238945_n.jpg" width="333px" class="maminka">
+                    <h2>Ráda šiju, miluju kafe a svého manžela ♥. Také moc ráda peču chleba. Dělám i kurzy na pečení chleba. Lorem ipsum dolor sit amet, consectetuer adipiscing elit.
+                        Nullam justo enim, consectetuer nec, ullamcorper ac, vestibulum in, elit.</h2>
+                </div>
+            </div>
+        </div>
+    </div>
+<!------- footer ------->
+        <div class="footer">
+                <div class="row">
+                    <div class="footer-col-1">
+                    <h3>Užitečné odkazy</h3>
+                    <ul>
+                        <li class="space-fix">Zásady vrácení peněz</li>
+                    </ul>
+                </div>
+                <div class="footer-col-2">
+                    <h3>Sleduj mě na</h3>
+                    <ul>
+                        <li onclick="location.href='https://www.facebook.com/Truhlice'" class="facebook">Facebook</li>
+                        <li onclick="location.href='https://www.instagram.com/truhlice/'" class="instagram">Instagram</li>
+                        <li onclick="location.href='https://www.instagram.com/vojtahojgr/'" class="programmer">Instagram (programátor)</li>
+                    </ul>
+                </div>
+            </div>
+            <hr>
+            <p class="copyright">Copyright 2021 - Truhlice</p>
+        </div>
+<!----- js pro toggleMenu ----->
+        <script src="js/toggleMenu.js"></script>
+    </body>
+</html>
